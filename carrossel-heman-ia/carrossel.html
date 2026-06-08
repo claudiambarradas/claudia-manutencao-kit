@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrossel — He-Man & as IAs que fariam melhor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coral:#C16A45;
+    --coral-deep:#B05A38;
+    --plum:#7A3252;
+    --ink:#161010;
+    --ink-soft:#1d1614;
+    --cream:#F3EAE3;
+    --cream-line:#e4d6cc;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased;}
+  body{background:#2a2a2a;display:flex;flex-direction:column;align-items:center;gap:40px;padding:40px;
+    font-family:'Inter','Liberation Sans','Helvetica Neue',sans-serif;}
+
+  @page{size:1080px 1350px;margin:0;}
+  @media print{
+    body{background:#fff;gap:0;padding:0;display:block;}
+    .slide{page-break-after:always;}
+    .slide:last-child{page-break-after:auto;}
+  }
+
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--ink);color:#fff;
+  }
+
+  /* ---------- TOP GRADIENT BAR (content) ---------- */
+  .topbar{position:absolute;top:0;left:0;right:0;height:7px;
+    background:linear-gradient(90deg,var(--coral) 0%,#a85a52 45%,var(--plum) 100%);z-index:5;}
+
+  /* page indicator */
+  .pageno{position:absolute;top:54px;right:64px;z-index:6;
+    background:rgba(255,255,255,.10);color:#fff;font-size:30px;font-weight:500;
+    padding:10px 26px;border-radius:40px;letter-spacing:.5px;}
+
+  /* eyebrow label */
+  .eyebrow{font-family:'Inter','Liberation Sans','Helvetica Neue',sans-serif;color:var(--coral);
+    font-weight:700;font-size:26px;letter-spacing:5px;text-transform:uppercase;}
+
+  /* serif title */
+  .title{font-family:'Playfair Display','Liberation Serif','Times New Roman',serif;color:#fff;font-weight:700;
+    font-size:88px;line-height:1.04;letter-spacing:-.5px;}
+  .title .it{font-style:italic;color:var(--coral);font-weight:600;}
+
+  /* body text */
+  .body{font-family:'Inter','Liberation Sans','Helvetica Neue',sans-serif;color:rgba(255,255,255,.80);
+    font-size:34px;line-height:1.5;font-weight:400;}
+  .body b{color:#fff;font-weight:600;}
+
+  /* ---------- CONTENT SLIDE LAYOUT ---------- */
+  .content{padding:120px 84px 90px;display:flex;flex-direction:column;height:100%;}
+  .content .eyebrow{margin-bottom:26px;}
+  .content .title{margin-bottom:30px;}
+  .content .body{margin-bottom:8px;max-width:900px;}
+  .shot{margin-top:auto;width:100%;display:flex;align-items:center;justify-content:center;}
+  .shot img{max-width:100%;max-height:560px;width:auto;border-radius:22px;
+    box-shadow:0 30px 70px rgba(0,0,0,.55);display:block;}
+
+  /* ---------- COVER ---------- */
+  .cover{padding:0;}
+  .cover .photo{position:absolute;inset:0;background-size:cover;background-position:center top;}
+  .cover .scrim{position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(15,10,10,.55) 0%,rgba(15,10,10,0) 28%,rgba(15,10,10,.15) 50%,rgba(15,10,10,.86) 88%,rgba(15,10,10,.96) 100%);}
+  .cover .top{position:absolute;top:76px;left:84px;right:84px;z-index:3;}
+  .cover .bottom{position:absolute;left:84px;right:84px;bottom:96px;z-index:3;}
+  .cover .title{font-size:112px;line-height:1.0;margin-bottom:28px;
+    text-shadow:0 4px 30px rgba(0,0,0,.45);}
+  .cover .body{color:rgba(255,255,255,.92);font-size:38px;max-width:880px;
+    text-shadow:0 2px 16px rgba(0,0,0,.5);}
+  .cover .topbar{background:linear-gradient(90deg,var(--coral),var(--plum));}
+
+  /* ---------- CTA ---------- */
+  .cta{background:var(--cream);color:#221a16;padding:150px 84px;
+    display:flex;flex-direction:column;justify-content:center;}
+  .cta .topbar{background:linear-gradient(90deg,var(--coral),var(--plum));}
+  .cta .title{color:#221a16;font-size:92px;margin-bottom:80px;}
+  .cta .title .it{color:var(--plum);}
+  .card{background:#fff;border-left:10px solid var(--coral);
+    padding:60px 64px;box-shadow:0 30px 60px rgba(120,80,60,.14);}
+  .card .lbl{font-family:'Inter','Liberation Sans','Helvetica Neue',sans-serif;color:var(--coral);font-weight:700;
+    font-size:26px;letter-spacing:6px;text-transform:uppercase;margin-bottom:22px;}
+  .card .handle{font-family:'Playfair Display','Liberation Serif','Times New Roman',serif;color:var(--plum);
+    font-weight:700;font-size:84px;line-height:1;margin-bottom:26px;}
+  .card .sub{font-family:'Inter','Liberation Sans','Helvetica Neue',sans-serif;color:#4a3f39;font-size:32px;line-height:1.45;}
+  .card .sub i{color:var(--coral);font-style:italic;font-weight:600;}
+</style>
+</head>
+<body>
+
+  <!-- 1 — CAPA -->
+  <section class="slide cover" id="s1">
+    <div class="photo" style="background-image:url('assets/capa-heman.jpeg');"></div>
+    <div class="scrim"></div>
+    <div class="topbar"></div>
+    <div class="top">
+      <div class="eyebrow" style="color:#fff;opacity:.9;">EFEITOS ESPECIAIS &mdash; PARTE 1</div>
+    </div>
+    <div class="bottom">
+      <h1 class="title">Os efeitos do novo<br>He-Man <span class="it">caíram</span>.</h1>
+      <p class="body">E essas 5 IAs teriam feito um trabalho bem melhor &mdash; por uma fração do orçamento.</p>
+    </div>
+  </section>
+
+  <!-- 2 — VEO 3 -->
+  <section class="slide content" id="s2">
+    <div class="topbar"></div><div class="pageno">2/7</div>
+    <div class="eyebrow">OPÇÃO 01</div>
+    <h2 class="title">Veo 3, <span class="it">realismo</span> de cinema.</h2>
+    <p class="body">Pra máximo realismo, qualidade cinematográfica e cenas de alta fidelidade movidas por IA.</p>
+    <div class="shot"><img src="assets/veo3_crop.jpeg" alt="Veo 3"></div>
+  </section>
+
+  <!-- 3 — SORA 2 -->
+  <section class="slide content" id="s3">
+    <div class="topbar"></div><div class="pageno">3/7</div>
+    <div class="eyebrow">OPÇÃO 02</div>
+    <h2 class="title">Sora 2, alta <span class="it">fidelidade</span>.</h2>
+    <p class="body">Uma das melhores escolhas pra máximo realismo e qualidade cinematográfica &mdash; cenas de IA com física que convence.</p>
+    <div class="shot"><img src="assets/sora2_crop.jpeg" alt="Sora 2"></div>
+  </section>
+
+  <!-- 4 — KLING 2.6 -->
+  <section class="slide content" id="s4">
+    <div class="topbar"></div><div class="pageno">4/7</div>
+    <div class="eyebrow">OPÇÃO 03</div>
+    <h2 class="title">Kling 2.6, realismo por <span class="it">menos</span>.</h2>
+    <p class="body">Excelente pra alto realismo a um custo menor. O <b>Nframe</b> define os frames de início e fim &mdash; ideal pra projetos profissionais e experimentais.</p>
+    <div class="shot"><img src="assets/kling_crop.jpeg" alt="Kling 2.6"></div>
+  </section>
+
+  <!-- 5 — RUNWAY -->
+  <section class="slide content" id="s5">
+    <div class="topbar"></div><div class="pageno">5/7</div>
+    <div class="eyebrow">OPÇÃO 04</div>
+    <h2 class="title">Runway, controle <span class="it">criativo</span>.</h2>
+    <p class="body">A melhor pra controle criativo avançado: <b>Multi-Motion Brush</b> e movimentos de câmera precisos &mdash; pan, tilt e zoom.</p>
+    <div class="shot"><img src="assets/runway_crop.jpeg" alt="Runway Gen 4.5"></div>
+  </section>
+
+  <!-- 6 — SEEDANCE -->
+  <section class="slide content" id="s6">
+    <div class="topbar"></div><div class="pageno">6/7</div>
+    <div class="eyebrow">OPÇÃO 05</div>
+    <h2 class="title">Seedance 2.0, vídeo <span class="it">com som</span>.</h2>
+    <p class="body">Gera vídeo e áudio juntos, até <b>2K</b> e multi-shot, mantendo o personagem consistente com até <b>12 referências</b> numa cena só.</p>
+    <div class="shot"><img src="assets/seedance_crop.jpeg" alt="Seedance 2.0"></div>
+  </section>
+
+  <!-- 7 — CTA -->
+  <section class="slide cta" id="s7">
+    <div class="topbar"></div>
+    <h2 class="title">Isso é só a <span class="it">parte 1</span>. Vem muita coisa por aí.</h2>
+    <div class="card">
+      <div class="lbl">ME SEGUE</div>
+      <div class="handle">@euclaud.ia</div>
+      <div class="sub">Pra não perder as próximas IAs que estão virando o jogo do <i>audiovisual</i>.</div>
+    </div>
+  </section>
+
+</body>
+</html>
