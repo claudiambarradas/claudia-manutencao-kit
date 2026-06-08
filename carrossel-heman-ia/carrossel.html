@@ -66,16 +66,13 @@
     box-shadow:0 30px 70px rgba(0,0,0,.55);display:block;}
 
   /* ---------- COVER ---------- */
-  .cover{padding:0;}
-  .cover .photo{position:absolute;inset:0;background-size:cover;background-position:center top;}
-  .cover .scrim{position:absolute;inset:0;
-    background:linear-gradient(180deg,rgba(15,10,10,.55) 0%,rgba(15,10,10,0) 28%,rgba(15,10,10,.15) 50%,rgba(15,10,10,.86) 88%,rgba(15,10,10,.96) 100%);}
-  .cover .top{position:absolute;top:76px;left:84px;right:84px;z-index:3;}
-  .cover .bottom{position:absolute;left:84px;right:84px;bottom:96px;z-index:3;}
-  .cover .title{font-size:112px;line-height:1.0;margin-bottom:28px;
-    text-shadow:0 4px 30px rgba(0,0,0,.45);}
-  .cover .body{color:rgba(255,255,255,.92);font-size:38px;max-width:880px;
-    text-shadow:0 2px 16px rgba(0,0,0,.5);}
+  .cover{padding:0;background:var(--ink);display:flex;flex-direction:column;}
+  .cover-inner{padding:118px 84px 40px;}
+  .cover .eyebrow{color:var(--coral);margin-bottom:30px;}
+  .cover .title{font-size:80px;line-height:1.06;margin-bottom:30px;}
+  .cover .body{color:rgba(255,255,255,.80);font-size:36px;max-width:920px;}
+  .cover-photo{margin-top:auto;width:100%;line-height:0;}
+  .cover-photo img{width:100%;display:block;}
   .cover .topbar{background:linear-gradient(90deg,var(--coral),var(--plum));}
 
   /* ---------- CTA ---------- */
@@ -98,16 +95,13 @@
 
   <!-- 1 — CAPA -->
   <section class="slide cover" id="s1">
-    <div class="photo" style="background-image:url('assets/capa-heman.jpeg');"></div>
-    <div class="scrim"></div>
     <div class="topbar"></div>
-    <div class="top">
-      <div class="eyebrow" style="color:#fff;opacity:.9;">EFEITOS ESPECIAIS &mdash; PARTE 1</div>
+    <div class="cover-inner">
+      <div class="eyebrow">EFEITOS ESPECIAIS &mdash; PARTE 1</div>
+      <h1 class="title">Essas 5 IAs teriam feito um filme do He-Man <span class="it">melhor</span>.</h1>
+      <p class="body">Hollywood gastou milhões e o CGI dividiu a crítica. Veja quem entregaria cinema de verdade &mdash; por uma fração.</p>
     </div>
-    <div class="bottom">
-      <h1 class="title">Os efeitos do novo<br>He-Man <span class="it">caíram</span>.</h1>
-      <p class="body">E essas 5 IAs teriam feito um trabalho bem melhor &mdash; por uma fração do orçamento.</p>
-    </div>
+    <div class="cover-photo"><img src="assets/capa-heman.jpeg" alt="Elenco de Masters of the Universe"></div>
   </section>
 
   <!-- 2 — VEO 3 -->
