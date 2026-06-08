@@ -57,13 +57,18 @@
   .body b{color:#fff;font-weight:600;}
 
   /* ---------- CONTENT SLIDE LAYOUT ---------- */
-  .content{padding:120px 84px 90px;display:flex;flex-direction:column;height:100%;}
+  .content{padding:120px 84px 96px;display:flex;flex-direction:column;}
   .content .eyebrow{margin-bottom:26px;}
   .content .title{margin-bottom:30px;}
   .content .body{margin-bottom:8px;max-width:900px;}
   .shot{margin-top:auto;width:100%;display:flex;align-items:center;justify-content:center;}
-  .shot img{max-width:100%;max-height:560px;width:auto;border-radius:22px;
+  .shot img{max-width:100%;max-height:500px;width:auto;border-radius:22px;
     box-shadow:0 30px 70px rgba(0,0,0,.55);display:block;}
+  /* "no filme" use-case line under each screenshot */
+  .usecase{margin-top:34px;font-family:'Inter','Liberation Sans','Helvetica Neue',sans-serif;
+    font-size:31px;line-height:1.32;color:#fff;font-weight:600;}
+  .usecase b{color:var(--coral);font-weight:700;letter-spacing:2px;
+    text-transform:uppercase;font-size:25px;margin-right:14px;}
 
   /* ---------- TEXT-ONLY CONTEXT SLIDE ---------- */
   .context{padding:330px 88px 120px;}
@@ -128,6 +133,7 @@
     <h2 class="title">Veo 3, <span class="it">realismo</span> de cinema.</h2>
     <p class="body">Pra máximo realismo, qualidade cinematográfica e cenas de alta fidelidade movidas por IA.</p>
     <div class="shot"><img src="assets/veo3_crop.jpeg" alt="Veo 3"></div>
+    <p class="usecase"><b>No filme &middot;</b> Realismo e movimento dos animais.</p>
   </section>
 
   <!-- 4 — SORA 2 -->
@@ -137,6 +143,7 @@
     <h2 class="title">Sora 2, alta <span class="it">fidelidade</span>.</h2>
     <p class="body">Uma das melhores escolhas pra máximo realismo e qualidade cinematográfica &mdash; cenas de IA com física que convence.</p>
     <div class="shot"><img src="assets/sora2_crop.jpeg" alt="Sora 2"></div>
+    <p class="usecase"><b>No filme &middot;</b> Interação dos personagens humanos com os de computação gráfica.</p>
   </section>
 
   <!-- 5 — KLING 2.6 -->
@@ -146,6 +153,7 @@
     <h2 class="title">Kling 2.6, realismo por <span class="it">menos</span>.</h2>
     <p class="body">Excelente pra alto realismo a um custo menor. O <b>Nframe</b> define os frames de início e fim &mdash; ideal pra projetos profissionais e experimentais.</p>
     <div class="shot"><img src="assets/kling_crop.jpeg" alt="Kling 2.6"></div>
+    <p class="usecase"><b>No filme &middot;</b> O mesmo das outras &mdash; enxugando o orçamento da produção.</p>
   </section>
 
   <!-- 6 — RUNWAY -->
@@ -155,6 +163,7 @@
     <h2 class="title">Runway, controle <span class="it">criativo</span>.</h2>
     <p class="body">A melhor pra controle criativo avançado: <b>Multi-Motion Brush</b> e movimentos de câmera precisos &mdash; pan, tilt e zoom.</p>
     <div class="shot"><img src="assets/runway_crop.jpeg" alt="Runway Gen 4.5"></div>
+    <p class="usecase"><b>No filme &middot;</b> Giro e movimento de câmera nas cenas de ação.</p>
   </section>
 
   <!-- 7 — SEEDANCE -->
@@ -164,6 +173,7 @@
     <h2 class="title">Seedance 2.0, vídeo <span class="it">com som</span>.</h2>
     <p class="body">Gera vídeo e áudio juntos, até <b>2K</b> e multi-shot, mantendo o personagem consistente com até <b>12 referências</b> numa cena só.</p>
     <div class="shot"><img src="assets/seedance_crop.jpeg" alt="Seedance 2.0"></div>
+    <p class="usecase"><b>No filme &middot;</b> Ambientação dos personagens em cada cenário.</p>
   </section>
 
   <!-- 8 — CTA -->
