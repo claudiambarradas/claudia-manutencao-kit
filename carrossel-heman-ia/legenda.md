@@ -12,7 +12,9 @@ Aí eu fui pensar: e se a IA tivesse colocado a mão? Separei **5 modelos de ví
 
 Arrasta até o fim 👉 e me conta: qual delas você botaria pra refazer o filme?
 
-Já segue o **@euclaud.ia** se você não é nerd de tecnologia mas quer fazer parte desse mundo da IA. ✨
+E se você não conhece nenhuma dessas, tudo bem… 😉
+Aqui é pra quem não é nerd de tecnologia mas quer conhecer mais sobre IA e usar.
+Já segue o **@euclaud.ia**. ✨
 
 —
 #heman #mastersoftheuniverse #efeitosespeciais #vfx #inteligenciaartificial #ia #veo3 #sora2 #kling #runway #seedance #videoia #aivideo #cinema #euclaudia
