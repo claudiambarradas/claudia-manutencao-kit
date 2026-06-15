@@ -13,6 +13,7 @@ Não é sobre marketing, conteúdo ou vendas. É sobre **manter tudo rodando** �
 - **`skills/ops-backup-verify/`** — checa se o último backup rodou, se tem tamanho razoável, se tá íntegro.
 - **`skills/ops-cron-audit/`** — lista todas as crons (Mac + VPS), explica cada uma em português, sinaliza órfãs/quebradas.
 - **`skills/ops-token-expiry-watch/`** — varre tokens de APIs (Meta, Google, etc.) e avisa quais vão expirar.
+- **`skills/utm-builder/`** — monta links de rastreio (UTM) sempre no mesmo padrão, mantém um `utm-registry.md` com seu vocabulário (fontes, mídias, campanhas) e audita links fora do padrão.
 - **`memory-templates/`** — feedbacks e referências prontos pro Claude saber as regras da sua operação.
 - **`claude-md-template/CLAUDE.md`** — template de CLAUDE.md focado em ops (stack, VPS, agentes, serviços).
 
