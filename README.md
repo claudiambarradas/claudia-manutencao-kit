@@ -19,7 +19,7 @@ Não é sobre marketing, conteúdo ou vendas. É sobre **manter tudo rodando** �
 ## Instalação
 
 ```bash
-git clone https://github.com/claudiamendesbarradas/claudia-manutencao-kit.git
+git clone https://github.com/claudiambarradas/claudia-manutencao-kit.git
 cd claudia-manutencao-kit
 ./install.sh
 ```
